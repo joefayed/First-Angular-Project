@@ -29,6 +29,7 @@ import { LoginComponent } from "./login/login.component";
 import { MatSelectModule } from "@angular/material/select";
 import { MatSlideToggleModule } from "@angular/material/slide-toggle";
 import { ReactiveFormsModule } from "@angular/forms";
+import {MatSliderModule} from '@angular/material/slider';
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 @NgModule({
   declarations: [
@@ -60,6 +61,7 @@ import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
     MatProgressSpinnerModule,
     AppRoutingModule,
     FormsModule,
+    MatSliderModule,
     ReactiveFormsModule,
   ],
   entryComponents: [LoginComponent],
