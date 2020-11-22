@@ -16,6 +16,7 @@ export class DishdetailComponent implements OnInit {
   dishIds: string[];
   prev: string;
   next: string;
+  dishcopy: Dish;
   formatLabel(value: number) {
     return value;
   }
@@ -59,7 +60,7 @@ validationMessages = {
         switchMap((params: Params) => this.dishservice.getDish(params["id"]))
       )
       .subscribe((dish) => {
-        this.dish = dish;
+        this.dish = dish; this.dishcopy = dish;
         this.setPrevNext(dish.id);
       });
   }
@@ -116,7 +117,12 @@ validationMessages = {
     var date = new Date();
     var data = this.feedbackForm.value;
     data.date=date;
-    this.dish.comments.push(data);
+    this.dishcopy.comments.push(data);
+    this.dishservice.putDish(this.dishcopy)
+      .subscribe(dish => {
+        this.dish = dish; this.dishcopy = dish;
+      },
+      errmess => { this.dish = null; this.dishcopy = null; this.errMess = <any>errmess; });
     this.feedback = this.feedbackForm.value;
     this.feedbackFormDirective.resetForm();
     this.feedbackForm.reset({
