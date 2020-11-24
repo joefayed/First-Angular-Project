@@ -8,7 +8,7 @@ import { DishService } from "../services/dish.service";
 })
 export class MenuComponent implements OnInit {
   constructor(private dishService: DishService,
-    @Inject('BaseURL') private BaseURL) {}
+    @Inject('BaseURL') public BaseURL) {}
   dishes: Dish[];
   errMess: string;
 

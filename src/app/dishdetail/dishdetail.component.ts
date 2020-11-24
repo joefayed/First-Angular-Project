@@ -45,7 +45,7 @@ validationMessages = {
     private dishservice: DishService,
     private route: ActivatedRoute,
     private location: Location, 
-    @Inject('BaseURL') private BaseURL
+    @Inject('BaseURL') public BaseURL
   ) 
   {
     this.createForm();

@@ -8,7 +8,7 @@ import { LeaderService } from "../services/leader.service";
 })
 export class AboutComponent implements OnInit {
   constructor(private leaderService: LeaderService, 
-    @Inject('BaseURL') private BaseURL) {}
+    @Inject('BaseURL') public BaseURL) {}
   leaders: Leader[];
   errMess: string;
   ngOnInit(): void {

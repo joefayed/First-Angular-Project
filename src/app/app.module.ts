@@ -34,6 +34,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatProgressSpinnerModule } from "@angular/material/progress-spinner";
 import { baseURL } from './shared/baseurl';
 import { ProcessHTTPMsgService } from './services/process-httpmsg.service';
+import { HighlightDirective } from './directives/highlight.directive';
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,6 +46,7 @@ import { ProcessHTTPMsgService } from './services/process-httpmsg.service';
     HomeComponent,
     ContactComponent,
     LoginComponent,
+    HighlightDirective,
   ],
   imports: [
     BrowserModule,

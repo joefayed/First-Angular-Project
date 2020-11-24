@@ -5,6 +5,7 @@ import { Promotion } from "../shared/promotion";
 import { PromotionService } from "../services/promotion.service";
 import { Leader } from "../shared/leader";
 import { LeaderService } from "../services/leader.service";
+import { BasePortalOutlet } from '@angular/cdk/portal';
 @Component({
   selector: "app-home",
   templateUrl: "./home.component.html",
@@ -18,7 +19,7 @@ export class HomeComponent implements OnInit {
     private dishservice: DishService,
     private promotionservice: PromotionService,
     private leaderservice: LeaderService,
-    @Inject('BaseURL') private BaseURL
+    @Inject('BaseURL') public BaseURL
   ) {}
   dishErrMess : string;
   promotionErrMess : string;
