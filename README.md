@@ -7,7 +7,14 @@ This Project is a part of the online course "Front-End JavaScript Frameworks: An
 This is a simple project with no UI/UX optimization, it just has the main functions and animations to show the capabilities of using Angular to design a web app/page, its accompanied with a json server which contains all the assets and database of the site.
 
 # Screenshots
-
+### Home Page
+![Alt text](/screencapture-localhost-4200-home-2020-11-27-15_44_44.png?raw=true "Optional Title")
+### DishDetail Page
+![Alt text](/screencapture-localhost-4200-dishdetail-1-2020-11-27-15_45_23.png?raw=true "Optional Title")
+### Contact us Page
+![Alt text](/screencapture-localhost-4200-contactus-2020-11-27-15_45_39.png?raw=true "Optional Title")
+### Login form Page
+![Alt text](/screencapture-localhost-4200-contactus-2020-11-27-15_45_51.png?raw=true "Optional Title")
 
 ## Development server
 
