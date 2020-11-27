@@ -1,6 +1,13 @@
 # ConFusion
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.3.
+This Project is a part of the online course "Front-End JavaScript Frameworks: Angular"
+
+# Describtion
+This is a simple project with no UI/UX optimization, it just has the main functions and animations to show the capabilities of using Angular to design a web app/page, its accompanied with a json server which contains all the assets and database of the site.
+
+# Screenshots
+
 
 ## Development server
 
